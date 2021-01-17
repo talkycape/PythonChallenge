@@ -29,11 +29,11 @@ def decrypt(message):
             string_out += chr(ascii_character+2)
     return string_out
 
-print "Decrypting original message:"
-print decrypt(string_in)
-print
-print "Decrypting original url and opening next page:" 
+print("Decrypting original message:")
+print(decrypt(string_in))
+print()
+print("Decrypting original url and opening next page:")
 target_url = 'http://www.pythonchallenge.com/pc/def/%s.html' % decrypt('map')
-print target_url
+print(target_url)
 webbrowser.open(target_url, new=2)
 
